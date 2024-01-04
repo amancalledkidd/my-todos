@@ -1,0 +1,23 @@
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #cccccc;
+    width: 300px;
+    
+    &__input {
+        border: 1px solid #cccccc00;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        outline: none;
+    }
+
+    &__button {
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    
+}
