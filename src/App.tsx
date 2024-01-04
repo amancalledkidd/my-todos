@@ -12,7 +12,7 @@ function App() {
     <>
       <Nav setTodos={setTodos}/>
       <Input placeholder='Add your task here...' setTodos={setTodos} todos={todos}/>
-      <TodoList todos={todos} />
+      <TodoList todos={todos} setTodos={setTodos} />
     </>
   )
 }

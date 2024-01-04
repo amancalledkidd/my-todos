@@ -9,6 +9,11 @@
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     width: 300px;
+    overflow: auto;
+
+    &:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
 
 
     &__todo {

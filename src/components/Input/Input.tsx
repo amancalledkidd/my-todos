@@ -17,6 +17,11 @@ const Input = ({ placeholder, todos, setTodos }: InputProps) => {
     }
 
     const handleAdd = () => {
+        if (!input) {
+            alert('Please enter a todo')
+            return
+        }
+
         let todoId;
         if (todos.length > 0 ) {
             const lastTodo = todos[todos.length - 1]
@@ -40,7 +45,7 @@ const Input = ({ placeholder, todos, setTodos }: InputProps) => {
 
     return (
         <div className='input-container'>
-            <input className='input-container__input' placeholder={placeholder} onChange={handleInput} />
+            <input className='input-container__input' placeholder={placeholder} value={input} onChange={handleInput} />
             <img className='input-container__button'src={plus} alt="add" onClick={handleAdd} />
         </div>
 
