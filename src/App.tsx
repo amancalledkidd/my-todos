@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Nav from './components/Nav/Nav'
 import Input from './components/Input/Input'
 import TodoList from './components/TodoList/TodoList'
-import Todo from './types/Todo'
+import { Todo } from './types/Todo'
 import './App.scss'
 
 

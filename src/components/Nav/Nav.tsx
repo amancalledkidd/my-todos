@@ -1,6 +1,6 @@
 import './Nav.scss';
 import Button from '../Button/Button';
-import Todo from '../../types/Todo';
+import { Todo } from '../../types/Todo';
 
 type NavProps = {
     setTodos: (todos: Todo[])  => void;

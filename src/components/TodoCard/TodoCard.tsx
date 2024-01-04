@@ -1,5 +1,5 @@
 import './TodoCard.scss';
-import Todo from '../../types/Todo';
+import { Todo } from '../../types/Todo';
 import bin from '../../assets/images/icons/bin.png';
 
 
@@ -18,6 +18,7 @@ const TodoCard = ({ todo, handleDelete, handleCheck }: TodoCardProps) => {
                 <input className='todo-card__item__checkbox' type="checkbox" checked={todo.complete} onChange={() => handleCheck(todo)} />
                 <p className='todo-card__item__todo'>{todo.text}</p>
             </label>
+            <p className='todo-card__priority'>{todo.priority}</p>
             <img className='todo-card__delete' src={bin} alt="delete" onClick={() => handleDelete(todo)} />
         </div>
     )

@@ -1,5 +1,5 @@
 import './TodoList.scss';
-import Todo from '../../types/Todo';
+import { Todo } from '../../types/Todo';
 import TodoCard from '../TodoCard/TodoCard';
 
 type TodoListProps = {
@@ -19,13 +19,16 @@ const TodoList = ({ todos, setTodos }: TodoListProps) => {
         const updatedTodos = todos.map(todo => {
             if (todo.id === todoToComplete.id) {
                 return {
-                    ...todo, complete: !todo.complete
+                    ...todo, 
+                    complete: !todo.complete, 
                 }
             }
             return todo
         })
         setTodos(updatedTodos)
     }
+
+    
 
     if (!todos.length) {
         return (

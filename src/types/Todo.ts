@@ -1,8 +1,10 @@
-type Todo = {
+export type Todo = {
     id: number;
     text: string;
     complete: boolean;
-    date?: string;
+    timeStamp: Date;
+    priority: Priority;
     };
 
-export default Todo;
+export type Priority = 'High' | 'Medium' | 'Low' | 'None' | 'Complete';
+
